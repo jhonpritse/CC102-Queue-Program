@@ -37,7 +37,7 @@ public class Main {
     }
 
     public static class Queue{
-    int front, rear, size, tes;
+    int front, rear, size;
     int capacity;
     int array[];
 
