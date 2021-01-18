@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        boolean isLoop = true;
 
         int arraySize = 5;
         Queue queue = new Queue(arraySize);
@@ -15,7 +14,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         String userResponse;
 
-        while (isLoop){
+        while (true){
             queue.Options();
 
             userResponse = input.nextLine().toUpperCase();
@@ -29,7 +28,7 @@ public class Main {
           else   if(userResponse.equals("C"))
               queue.Display();
           else   if(userResponse.equals("D"))
-              isLoop = false;
+              break;
           else
               queue.OtherResponse();
         }
