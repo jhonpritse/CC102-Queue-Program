@@ -61,7 +61,7 @@ public class Main {
             return;
         }
         this.rear = (this.rear + 1) % this.capacity;
-        this.array[this.rear] = nmum;
+        this.array[this.rear] = num;
         this.size = this.size + 1;
         System.out.println("\t"+num + " was enqueued to queue\n");
     }
